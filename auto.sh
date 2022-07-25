@@ -1,32 +1,11 @@
 #!/bin/bash
 
 #===============================================================================================
-#   System Required:  Debian 7+
+#   System Required:  Debian 7+ Ubuntu 20 focal
 #   Description:  Install OpenConnect VPN server for Debian
 #   Ocservauto For Debian Copyright (C) liyangyijie released under GNU GPLv2
 #   Ocservauto For Debian Is Based On SSLVPNauto v0.1-A1
 #   SSLVPNauto v0.1-A1 For Debian Copyright (C) Alex Fang frjalex@gmail.com released under GNU GPLv2
-#   Date: 2015-07-10
-#   Thanks For
-#   http://www.infradead.org/ocserv/
-#   https://www.stunnel.info  Travis Lee
-#   http://luoqkk.com/ luoqkk
-#   http://ttz.im/ tony
-#   http://blog.ltns.info/ LTNS
-#   https://github.com/clowwindy/ShadowVPN (server up/down script)
-#   http://imkevin.me/post/80157872840/anyconnect-iphone
-#   http://bitinn.net/11084/
-#   http://zkxtom365.blogspot.jp/2015/02/centos-65ocservcisco-anyconnect.html
-#   https://registry.hub.docker.com/u/tommylau/ocserv/dockerfile/
-#   https://www.v2ex.com/t/158768
-#   https://www.v2ex.com/t/165541
-#   https://www.v2ex.com/t/172292
-#   https://www.v2ex.com/t/170472
-#   https://sskaje.me/2014/02/openconnect-ubuntu/
-#   https://github.com/humiaozuzu/ocserv-build/tree/master/config
-#   https://blog.qmz.me/zai-vpsshang-da-jian-anyconnect-vpnfu-wu-qi/
-#   http://www.gnutls.org/manual/gnutls.html#certtool-Invocation
-#   Max Lv (server /etc/init.d/ocserv)
 #===============================================================================================
 
 ###################################################################################################################
@@ -973,7 +952,8 @@ function surport_Syscodename(){
     [ "$oc_D_V" = "vivid" ] && return 0
     [ "$oc_D_V" = "wily" ] && return 0
     [ "$oc_D_V" = "xenial" ] && return 0
-	[ "$oc_D_V" = "focal" ] && return 0
+    [ "$oc_D_V" = "focal" ] && return 0
+    [ "$oc_D_V" = "jammy" ] && return 0
     #TEST NEWER SYS 测试新系统，取消下面一行的注释。
     #[ "$oc_D_V" = "$oc_D_V" ] && return 0
 ###############################
